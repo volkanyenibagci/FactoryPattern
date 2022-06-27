@@ -9,36 +9,36 @@ namespace FactoryPattern.Concrete
 {
     internal class Xaomi10 : ITelephone
     {
-        private string model;
-        private string batarya;
-        private string en;
-        private string boy;
+        private readonly string _model;
+        private readonly string _batarya;
+        private readonly string _en;
+        private readonly string _boy;
 
         public Xaomi10(string model, string batarya, string en, string boy)
         {
-            this.model = model;
-            this.batarya = batarya;
-            this.en = en;
-            this.boy = boy;
+            this._model = model;
+            this._batarya = batarya;
+            this._en = en;
+            this._boy = boy;
         }
         public string getModel()
         {
-            return model;
+            return _model;
         }
 
         public string getBatarya()
         {
-            return batarya;
+            return _batarya;
         }
 
         public string getEn()
         {
-            return en;
+            return _en;
         }
 
         public string getBoy()
         {
-            return boy;
+            return _boy;
         }
     }
 }
